@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sheikbro.onlinechat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11" 
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="Wings"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Holo.NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Wings"
+            android:icon="@drawable/logo2"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Loginpage"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_loginpage" >
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_loginpage" >
+        </activity>
+        <activity
+            android:name=".Homepage"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_homepage" >
+        </activity>
+        <activity
+            android:name=".Verification"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_homepage" >
+        </activity>
+        <activity
+            android:name=".AddContact"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_add_contact" >
+        </activity>
+        <activity
+            android:name=".ChatWindow"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_add_contact"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".Image"
+            android:label="@string/title_activity_image" >
+        </activity>
+        <activity
+            android:name=".Audio"
+            android:label="@string/title_activity_audio" >
+        </activity>
+        <activity
+            android:name=".Video"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name=".Grouppage"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_grouppage" >
+        </activity>
+    </application>
+
+</manifest>
